@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin:0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            
+        }
+        body{
+            color: #fff;
+            background: #081b29;
+        }
+
+        .education{
+    background-color: #c4dbde;
+    border: 1px solid blue;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+    .education h3{
+        color:#020f36;
+}.education i{
+    color:#020f36;
+    font-size: 30px;
+}
+    .education h2{
+        color:#0a1909
+    }
+        .download-btn{
+     background-color: rgb(245, 178, 53);
+    color: rgb(3, 15, 74);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius:100px;
+    border:0.05rem solid #fff;
+    box-shadow: 0 0 0.2rem #fff, inset 0 0 1rem #fff, 0 0 1rem #3877ff, inset 0 0 1rem #3877ff, 0 0 3rem #3877ff, inset 0 0 3rem #3877ff;
+
+
+   
+}
+
+.download-btn:hover {
+    background-color: #5d88f4;
+    color:#fff;
+
+   
+  }
+        .portfolio-container{
+            min-height: 100vh;
+            width:100%;
+            display: flex;
+
+        
+        }
+        
+         .navlist{
+            display: flex;
+            gap:2.2rem;
+            height: 9vh;
+            width: 100%;
+            justify-content: center;
+            align-items:center;
+            position: absolute;
+
+         }
+         .navlist li{
+            list-style:none;
+        
+            
+            
+         }
+         .navlist li a{
+            text-decoration: none;
+            font-size: 20px;
+            color:#fff;
+            position: relative;
+         }
+         .navlist li a::after{
+            content: "";
+            position: absolute;
+            background: #a4ee1c;
+            width: 100%;
+            height: .15rem;
+            left:0;
+            bottom: -5px;
+            transform: scaleX(0);
+            transition: transform .5s;
+
+         }
+         .navlist li a:hover{
+            color: #5d88f4;
+         }
+         .navlist li a:hover::after{
+            transform: scaleX(1);
+    
+         }
+         .navlist li a:active{
+            color:#08f758;
+         }
+
+         .left-container ,.right-container{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background-attachment: fixed;
+          }
+         .left-container{
+            background:  #081b29;
+            width:70%;
+            padding-left: 3rem;
+
+          }
+          .right-container{
+            background:linear-gradient(-45deg,#5c8cf5, #081b29 70%);
+            width:30%;
+          }
+          .content{
+            margin-left: 2rem;
+    
+          }
+          .content h2{
+            font-size:1.2rem ;
+            color:#fff;
+          }
+          
+          .content h1{
+            color:#5db9ee;
+           
+          }
+          .content span{
+            font-size:1.4rem ;
+            color:#f1e8a7;
+          }
+          .btn-container button{
+    background-color:orange;
+    color: #16065c;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale 0.2 ease;
+}
+.btn-container button:hover{
+    scale:1.05;
+    color: #fff;
+}
+.btn-container button:active{
+    scale: 0.75;
+    color: rgb(197, 229, 17);
+    background-color: #5583e4;
+    
+}
+.design .circle{
+    aspect-ratio: 1;
+    position:absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+
+
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg ,transparent 50%, #081b29 50%);
+    width: 24rem;
+}
+.circle:nth-child(2){
+    background-image: url("pic.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 18rem;
+    border:0.2rem solid #fff;
+    box-shadow: 0 0 1rem #fff, inset 0 0 1rem #fff, 0 0 2rem #3877ff, inset 0 0 2rem #3877ff, 0 0 4rem #3877ff, inset 0 0 4rem #3877ff;
+}
+.about{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+  
+}
+ .about-img img{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    height: auto;
+    width:60%;
+    border-radius: 35%;
+    border:0.09rem solid #fff;
+    box-shadow: 0 0 1rem #fff, inset 0 0 1rem #fff, 0 0 2rem #d823b4f7, inset 0 0 2rem #012a5df7, 0 0 4rem #6491ea, inset 0 0 4rem #021553f7;
+  
+
+}
+
+.about-text h1{
+    font-size: 60px;
+}
+.about-text h2 span{
+    color:#6f76f7;
+}
+.about-text p span{
+    color: #08f758;
+    text-decoration: solid;
+}
+.about-text h3{
+    text-decoration: solid;
+    font-style: italic;
+    
+}
+#ch{
+    display: none;
+
+}
+label{
+    display: inline-block;
+    cursor: pointer;
+    background-color:orange;
+    color: #16065c;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transform: scale 0.1 ease;
+    border:0.05rem solid #fff;
+    box-shadow: 0 0 0.5rem #fff, inset 0 0 1rem #fff, 0 0 1rem #d823b4f7, inset 0 0 1rem #012a5df7, 0 0 2rem #6491ea, inset 0 0 2rem #021553f7;
+    }
+label:hover{
+    scale:1.30;
+    color: #fff;
+    background-color: #5583e4;
+   
+    } 
+label:active{
+    scale: 0.70;
+    color: rgb(229, 104, 32);
+   
+}
+#ch:checked ~ .more{
+    display: block;
+
+}
+#ch:checked~label{
+    display: none;
+}
+.more{
+    display: none;
+}
+.contact{
+position: relative;
+min-height: 100hv;
+padding:50px 100px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+background-size: cover;
+}
+.contact .content {
+    max-width: 900px;
+    
+}
+.contact .content h2{
+    font-size: 36px;
+    color:#fff;
+}
+.contact .content span{
+    font-size: 36px;
+    font-weight: 500;
+    color:#6f76f7;
+}
+.contact .content p{
+    font-weight: 500;
+   
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 13px 0;
+    display: flex;
+   
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 2px solid;
+    
+}
+#msg{
+    color: #61b752;
+    margin-top: 5px;
+    display: block;
+}
+.container .contactInfo .box .text1{
+    display: flex;
+    margin-left: 20px;
+    font-size: 12px;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text1 h3{
+    font-weight: 500;
+    color:#00bcd4;
+}
+.contactForm{
+    width: 80%;
+    padding: 40px;
+
+
+}
+.contactForm h2{
+    font-size: 30px;
+    color:white;
+    font-weight: 500;
+}
+.contactForm .inputbox{
+    position: relative;
+    width:100%;
+    margin-top:10px;
+}
+.contactForm .inputbox input,.contactForm .inputbox textarea{
+    
+    width:100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    border: none;
+    border-bottom: 1px solid #ade4fd;
+    outline: none;
+    resize: none;
+    background-color: rgb(182, 230, 245);
+   border-radius: 2px;
+}
+.contactForm .inputbox span{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #370101;
+
+}
+.contactForm .inputbox input:focus ~ span,
+    .contactForm .inputbox input:valid ~ span,
+        .contactForm .inputbox textarea:focus ~ span,
+            .contactForm .inputbox textarea:valid ~ span{
+    color: #1edfe9;
+    font-size:12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color:#370101;
+    cursor: pointer;
+    padding: 10px;
+    font-size: larger;
+
+}
+.contactForm .inputbox input[type="submit"]:hover{
+    background-color: #08f758;
+}
+.contactForm .inputbox input[type="reset"]{
+    width: 100px;
+    background: #00bcd4;
+    color:#370101;
+    cursor: pointer;
+    padding: 10px;
+    font-size: larger;
+
+}
+.contactForm .inputbox input[type="reset"]:hover{
+    background-color: #08f758;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 15px;
+    background-color: #00bcd4;
+    margin: 5px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 1.5rem;
+    color:black;
+    
+}
+.socialIcons a:hover {
+    background-color:  #08f758;
+}
+.footerBottom{
+    background-color: #595b63;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: #fff;
+}
+.portfolio{
+    padding: 50px 0;
+}
+.cont1 .sub-title{
+    padding-left: 130px;
+    padding-top: 50px;
+    font-size: 36px;
+    font-weight: 500;
+    color:#fff;
+    
+}
+.cont1 .sub-title span{
+    color:#6f76f7;
+}
+.cont{
+   
+    margin-top: 40px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+    
+}
+.work{
+    border-radius: 10px;
+   position: relative;
+   overflow: hidden;
+    width: 250px;
+    margin: 0 25px;
+    
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.1);
+}
+.work img{
+width: 100%;
+height: 310px;
+display: block;
+border-radius: 10px;
+transition: transform 0.5s;
+}
+
+.project{
+
+    width:100%;
+    height: 0;
+    background: linear-gradient(rgba(107, 143, 233, 0.5),rgba(213, 43, 43, 0.95),#043301);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.project h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color:yellow
+}
+.project a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.project a:hover{
+    background-color:#0aed2c;
+
+}
+.project a:active{
+    background-color:#5977ef;
+
+}
+
+.work:hover img{
+    transform: scale(1.1);
+
+}
+.work:hover .project{
+    height: 100%;
+}
+#experience {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 0.2rem;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+
+
+.about-containers
+ {
+  display: flex;
+}
+.experience-sub-title {
+  color: rgb(16, 244, 80);
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0.7rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.1rem;
+}
+
+article i {
+  cursor: default;
+  color: #0aed2c;
+}
+.details-containers {
+  padding:1.5rem;
+  flex: 1;
+  border-radius: 2rem;
+  border:0.05rem solid #fff;
+  box-shadow: 0 0 0.5rem #fff, inset 0 0 1rem #fff, 0 0 1rem #d823b4f7, inset 0 0 1rem #012a5df7, 0 0 2rem #6491ea, inset 0 0 2rem #021553f7;
+  text-align: center;
+  transition: transform(0.5s);
+}
+.details-containers:hover{
+    transform: scale(1.1);
+    border:0.2rem solid #fff;
+    box-shadow: 0 0 0.5rem #fff, inset 0 0 0.2rem #fff, 0 0 0.3rem #19d24df7, inset 0 0 0.2rem #14e9d7f7, 0 0 0.5rem #788aae, inset 0 0 0.5rem #cbe80df7;
+  
+
+
+}
+.article-container h3{
+    font-size: 15px;
+}
+.sk{
+    
+    margin-left: 45px;
+}
+.sk1{
+    
+    margin-right: 1px;
+}
+.sk2{
+    
+    margin-right: 45px;
+}
+.sk3{
+    
+    margin-right: 12px;
+}
+
+.title span{
+    color:#6f76f7;
+}
+.title{
+    padding-left: 130px;
+    padding-top: 50px;
+    font-size: 36px;
+    font-weight: 500;
+    color:#fff;
+}
+
+.certificate span{
+    color:#6f76f7;
+}
+.certificate{
+    padding-left: 130px;
+    padding-top: 50px;
+    font-size: 36px;
+    font-weight: 500;
+    color:#fff;
+
+}
+.tab-titles{
+    display: flex;
+    margin:20px 0 40px;
+
+}
+.tab-links{
+    color: #08f758;
+    margin-left: 60px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+.tab-links::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background:#00bcd4;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.download-btn1{
+    color:#ffffff;
+}
+.download-btn1:active{
+    color:#1a8006;
+}
+.tab-contents ul li{
+    margin-left: 90px;
+}
+.tab-contents ul li p{
+    color:#0aa5b3;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.action-tab{
+    display: block;
+}
+@media (max-width:991px){
+   
+    
+}
+
+
+
+
+ 
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="portfolio-container"> 
+       
+                <ul class="navlist">
+                    <li><a href="#h1">HOME</a></li>
+                    <li><a href="#a1">ABOUT</a></li>
+                    <li><a href="#s1">SKILLS</a></li>
+                    <li><a href="#ce1">Certifications</a></li>
+                    <li><a href="#w1">PROJECTS</a></li>
+                    <li><a href="#c1">CONTACT ME</a></li>
+                </ul>
+               
+            
+                
+               
+          
+            <div class="left-container" id="h1">
+                <div class="content">
+                <h2>Hello, it's Me <span>Naveen k s</span> <br>From India</h2>
+                <h1>Full Stack Developer.</h1><br><br>
+                <div class="btn-container">
+                    <a href="NAVEEN K S _Resume.pdf" download='Resume' class="download-btn"><b>Dowload Resume</b>
+                        <b><i class="fa fa-download"></i></b>
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div class="right-container"></div>
+            <div class="design">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                </div>
+                </div>
+            <section class="about" id="a1">
+                <div class="about-img">
+                    <img src="pic.jpg">
+                </div>
+                <div class="about-text">
+                    <input id="ch" type="checkbox">
+                    <h2>About<span> Me</span></h2>
+                    <h3>Full Stack Developer</h3><br>
+                    <div class="education">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        <h2>Education</h2>
+                        <h3>PUC</h3>
+                        <h3>B.Tech Bachelors Degree</h3>
+
+                    </div><br>
+                    <p>Hello, my name is <span>Naveen k s</span>, and <span> I’m a computer science student at Presidency 
+                        University with CGPA 9.09(till 5th semister).</span> I’m very much interested in the field 
+                        because it allows me to apply my math, science, and programming knowledge to solve 
+                        exciting and valuable problems. I am also interested in the future of technology 
+                        because even though computer technology has come a long way since I was a kid playing 
+                        with basic calculators, there are still parts of our lives that depend on computers. 
+                        I want to be able to help make those parts better!<b>. . . . .  .  .  .</b>
+                        <div id="more" class="more"> To be honest, my short-term goal is
+                        to get a job in a reputed company and  my long-term goal is to get a good position in 
+                        the same company.  Other than that, if I talk about my strengths – I can say that I’m 
+                        a quick learner, team player, adaptable ,hard worker self motivated person and creative 
+                        person. In my free time, I enjoy spending time with my family, listenning music, playing 
+                        outdoor sports, and cooking.That’s all about me.</p>
+                        <label for="ch">Show less</label>
+                    </div>
+                    <label for="ch">More about</label>
+                </div>
+                
+            </section>
+            <section id="experience">
+               
+                <h1 class="title" id="s1">Technical <span> Skills</span></h1>
+                <div class="experience-details-container">
+                  <div class="about-containers">
+                    <div class="details-containers">
+                      <h2 class="experience-sub-title">Frontend Development</h2>
+                      <div class="article-container">
+                        <article>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <div >
+                           <h3>HTML & CSS</h3>
+                            <p>Advanced</p>
+                        </div>
+                        </article>
+                        <article>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                          <div class="sk">
+                            <h3 class="sk1"> Java Full Stack Development</h3>
+                           <p class="sk1"> Advanced</p>
+                        </div>
+                        </article>
+                        <article>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                          <div class="sk">
+                            <h3>Frontend Full Stack Development</h3>
+                            <p>Advanced</p>
+                          </div>
+                        </article>
+                        <article>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                          <div class="sk">
+                            <h3>Python</h3>
+                            <p>Intermediate</p>
+                          </div>
+                        </article>
+                        <article>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                          <div class="sk">
+                            <h3>C sharp.net</h3>
+                            <p>Intermediate</p>
+                          </div>
+                        </article>
+                        <article>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                          <div class="sk">
+                            <h3>JavaScript </h3>
+                            <p>Intermediate</p>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                    <div class="details-containers">
+                      <h2 class="experience-sub-title">DataBase</h2>
+                      <div class="article-container">
+                        <article>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                          <div class="sk">
+                            <h3 class="sk3">MongoDB</h3>
+                            <p>Advanced</p>
+                          </div>
+                        </article>
+                        <article>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                          <div class="sk">
+                            <h3>MySql</h3>
+                            <p>Intermediate</p>
+                          </div>
+                        </article>
+                        <article>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                          <div class="sk">
+                            <h3>Cassandra</h3>
+                            <p>Basic</p>
+                          </div>
+                        </article>
+                        <article>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                          <div class="sk">
+                            <h3 class="sk2">Xampp</h3>
+                            <p>Basic</p>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+              </section>
+           <section>
+                <h1 class="certificate" id="ce1">Certifications</h1>
+                <div class="tab-titles">
+                <p class="tab-links active-link">Certificates-.pdf</p>
+                </div>
+                <div class="tab-contents action-tab" id="Skills">
+                    <ul>
+                        <li>
+                            <a href="ML.pdf" download='ML' class="download-btn1"><b>Dowload Certificate</b>
+                                <b><i class="fa fa-download"></i></b>
+                            </a>
+                            <p>Machine Learning Algorithms-simplilearn</p>
+
+                        </li><br>
+                        <li>
+                            <a href="udemy_DBMS.pdf" download='DBMS' class="download-btn1"><b>Dowload Certificate</b>
+                                <b><i class="fa fa-download"></i></b>
+                            </a>
+                            <p>Introduction to DBMS-Udemy</p>
+
+                        </li><br>
+                        <li>
+                            <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-dcca30c7-22b7-4e61-a01c-2182a15303bf.jpg" download='' class="download-btn1"><b>Dowload Certificate</b>
+                                <b><i class="fa fa-download"></i></b>
+                            </a>
+                            <p>CSS Complete Coursse For Beginners-Udemy</p>
+
+                        </li><br>
+                        <li>
+                            <a href="VAC.pdf" download='VAC' class="download-btn1"><b>Dowload Certificate</b>
+                                <b><i class="fa fa-download"></i></b>
+                             </a>
+                            <p>Ethics In Engineering Practice-VAC</p>
+                        </li><br>
+                  
+                        <li>  <a href="https://www.freecodecamp.org/certification/fcc4c8f4e52-5247-4c4a-979b-7eb2efd5bcfd/javascript-algorithms-and-data-structures" download='' class="download-btn1"><b>click to view certificate</b>
+                            <b><i class="fa fa-download"></i></b>
+                        </a><p>Javacsript-freeCodeCamp</p>
+                    </li>
+                    </ul>
+
+                </div>
+                
+           </section>
+        
+            <section>
+                <div class="portfolio" id="w1">
+                    <div class="cont1">
+                       <b> <h1 class="sub-title">My <span> Work</span></h1></b>
+                        <div class="cont">
+                        <div class="work">
+                            <img src="work1.jpg">
+                            <div class="project">
+                                <h3>clap switch</h3>
+                                <p>A clap switch circuit can be used in homes and businesses to turn on things such as: lights, TVs.</p>
+                                <a href="https://github.com/Nksnaveenks/Line-following-Robot-using-Raspberry-pi-Pico/tree/main/Clap%20Switch%20with%20Arduino%20using%20KY-038%20Sensor"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="work2.jpg">
+                            <div class="project">
+                                <h3>Line Follow Robot</h3>
+                            <p>The line follower robot is a mobile machine that can detect and follow the line drawn on the floor.</p>
+                            <a href="https://github.com/Nksnaveenks/Line-following-Robot-using-Raspberry-pi-Pico/tree/main/Line_Following_Robot_Raspberry-pi"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        </div>
+                        <div class="work">
+                            <img src="work3.jpg">
+                            <div class="project">
+                                <h3>other</h3>
+                            <p>The line follower robot is a mobile machine that can detect and follow the line drawn on the floor.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section class="contact" id="c1">
+                <div class="content"><br>
+                    <h2><b>Contact<span> Me</span></b></h2>
+                </div>
+                <div class="container">
+                    <div class="contactInfo">
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                <div class="text1">
+                                <b><h3>Address</h3></b>  
+                                <b> <p>Shimoga Camp Road,<br>Karnataka, pin-577204,<br>India</p></b>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                                    <div class="text1">
+                                    <b><h3>Phone</h3></b>  
+                                    <b><p>7204596975</p></b>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                        <div class="text1">
+                                        <b><h3>Email</h3></b>  
+                                        <b><p>nks990217@gmail.com</p></b>
+                                        </div>
+                                    </div>
+                                    <div class="socialIcons">
+                                        <a href="https://www.linkedin.com/in/naveen-k-s-518063230/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Nksnaveenks"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.google.com/search?q=google+.com+login&rlz=1C1CHBF_enIN1019IN1019&oq=google+.com&gs_lcrp=EgZjaHJvbWUqDAgBEAAYFBiHAhiABDIGCAAQRRg5MgwIARAAGBQYhwIYgAQyDQgCEAAYgwEYsQMYgAQyBggDEEUYPDIGCAQQRRhBMgYIBRBFGEEyBggGEEUYPDIGCAcQRRg80gEIODQ5MGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"><i class="fa-brands fa-google-plus"></i></a>
+
+                                    </div>
+                                </div>
+                                <div class="contactForm">
+                                    <form name="submit-to-google-sheet">
+                                        <h2>
+                                            Send Message
+                                        </h2>
+                                        <div class="inputbox">
+                                            <input type="text" name="Name" required="required">
+                                            <span>Full Name</span>
+                                        </div>
+                                        <div class="inputbox">
+                                            <input type="email" name="Email" required="required">
+                                            <span>Email</span>
+                                        </div>
+                                        <div class="inputbox">
+                                            <textarea name="Message" required="required"></textarea>
+                                            <span>Type your Message...</span>
+                                        </div>
+                                         <div class="inputbox">
+                                           <input type="submit" name="" required="required">
+                                           <input type="reset" name="" required="required"> 
+                                            
+                                        </div>
+                                    </form>
+                                    <span id="msg"></span>
+            
+                                </div>
+                            </div>
+                        </section>
+                        <footer>
+                            <div class="footerContainer" id="l1">
+                        <div class="footerBottom">
+                                    <p>Copyright &copy;2024; Designed by <span class="designer">Naveen k s</span></p>
+                    
+                        </div>
+                            </div>
+                        </footer>
+                        <script>
+                            const scriptURL = 'https://script.google.com/macros/s/AKfycbyBZSQDrg3AenA60Kbr8yDjZWlVnCWYdn4IHE3JGdZtHxEmswZFtyFOg2q1fdTDRv4V/exec'
+                            const form = document.forms['submit-to-google-sheet']
+                            const msg=document.getElementById("msg")
+                          
+                            form.addEventListener('submit', e => {
+                              e.preventDefault()
+                              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                                .then(response => 
+                                {
+                                    msg.innerHTML="Message send successfully"
+                                    setTimeout(function(){
+                                        msg.innerHTML=""
+                                    },5000)
+                                    form.reset()
+                                })
+                                .catch(error => console.error('Error!', error.message))
+                            })
+                          </script>
+
+
+    
+</body>
+</html>

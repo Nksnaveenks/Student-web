@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Open Sans',sans-serif;
+
+}
+body{
+        
+        background-image:linear-gradient(rgba(9,0,60,0.5),rgba(9,0,60,0.5)),url("home2.jpg");
+        min-height: 100vh;
+        background-size:cover;
+        background-attachment: fixed;
+        
+        width:100%;
+        background-repeat:no-repeat;
+        background-position:center;
+        padding:3px 1%;
+}
+.work{
+    margin-left: 50px;
+    color: white;
+}
+.cont{
+    width: 80%;
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+.imagebox {
+    width: 250px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+.imagebox img{
+max-width: 200px;
+height: 300px;
+display: block;
+border-radius: 8px;
+}
+.imagebox:hover{
+    transform: scale(1.1);
+    z-index: 2s;
+    border-radius: 8px;
+    border: 4px solid;
+    border-color: yellow purple #e64a16 #7cb7f1;
+    
+}
+
+/*contact us*/
+.contact{
+position: relative;
+min-height: 100hv;
+padding:50px 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: rgb(59, 61, 53);
+background-size: cover;
+}
+.contact .content {
+    max-width: 900px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color:#69d6ec;
+}
+.contact .content p{
+    font-weight: 500;
+    color:#fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 13px 0;
+    display: flex;
+   
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid blue;
+    font-size: 20px;
+    
+}
+.container .contactInfo .box .text1{
+    display: flex;
+    margin-left: 20px;
+    font-size: 12px;
+    color:#fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text1 h3{
+    font-weight: 500;
+    color:#00bcd4;
+}
+.contactForm{
+    width: 80%;
+    padding: 40px;
+    background: #fff;
+    border: 3px solid;
+    border-radius: 30px;
+    border-color: yellow purple #e64a16 #e63da8;
+
+}
+.contactForm h2{
+    font-size: 30px;
+    color:#333;
+    font-weight: 500;
+}
+.contactForm .inputbox{
+    position: relative;
+    width:100%;
+    margin-top:10px;
+}
+.contactForm .inputbox input,.contactForm .inputbox textarea{
+    
+    width:100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputbox span{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+
+}
+.contactForm .inputbox input:focus ~ span,
+    .contactForm .inputbox input:valid ~ span,
+        .contactForm .inputbox textarea:focus ~ span,
+            .contactForm .inputbox textarea:valid ~ span{
+    color: #e91e63;
+    font-size:12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color:#fff;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media (max-width:991px){
+    .contact{
+        padding: 50px;
+
+    }
+    .container{
+        flex-direction: column;
+    }
+ 
+
+    
+
+}
+@media (max-width:991px){
+    #hero{
+        padding: 50px;
+    }
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .cont {
+        display:block;
+        flex-direction:column;
+        width:100%;
+        text-align:unset;
+        margin: 0%;
+    }
+    .imagebox img{
+    
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .sec{
+        display:block;
+        flex-direction:column;
+        width:100%;
+        text-align:unset;
+        margin: 0%;
+    }
+     .robo img{
+        width:100%;
+        text-align: center;
+        margin: 0;
+
+     }
+
+
+}
+
+
+.h1{
+    background: linear-gradient(90deg,#d3f706,#e5fafb,#0303fa);
+    font-family: Poppins;
+    font-size: 40px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sec{
+    display: flex;
+    justify-content: space-between;
+}
+.sec img{
+    height: 300px;
+    width:50%;
+    border: 3px solid;
+    border-color: yellow green blue rgb(95, 42, 6);
+    border-radius: 3rem;
+   
+   
+}
+section .title{
+    
+    -webkit-text-stroke: 0.99px #fff;
+    color:transparent;
+    background-image: linear-gradient(yellow,yellow);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -720px 0;
+    animation: backcolor linear infinite alternate forwards;
+    animation-duration: 10s;
+
+}
+@keyframes backcolor {
+    100%{
+        background-position: 0 0;
+    }
+}
+
+section .title1{
+    
+   -webkit-text-stroke: 0.99px #fff;
+    color:transparent;
+    background-image: linear-gradient(yellow,yellow);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -720px 0;
+    animation: backcolor1  linear infinite alternate forwards;
+    animation-duration: 10s;
+    
+}
+@keyframes backcolor1 {
+    100%{
+        background-position: 0 0;
+    }
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration-skip: none;
+    color:#fff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(149, 100, 196);
+    border:1.5px solid  #c7b213;
+    border-radius: 10px;
+    
+}
+a:active{
+    color: red;
+
+
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+section#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content: left;
+    text-align: left;
+    color:#fff;
+
+}
+#hero h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#hero p {
+    font-size: 1.8rem;
+    
+}
+#hero .robo{
+    width: 100%; 
+    font-size: 1.5rem;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar a{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 3px 3px;
+
+}
+.navbar{
+    display: flex;
+    gap:2rem;
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+
+}
+.navbar .toggle_btn{
+    color:#fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.navbar .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:rgb(148, 233, 236);
+    background:linear-gradient(60deg,rgba(237, 245, 8, 0.6),rgba(100, 55, 3, 0.6),rgba(7, 161, 7, 0.6),rgba(130, 73, 243, 0.6));
+        }
+    
+
+.action_btn{
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale 0.2 ease;
+}
+.action_btn:hover{
+    scale:1.05;
+    color: #fff;
+}
+.action_btn:active{
+    scale: 0.75;
+    color: blue;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 200px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height: 190px;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu .action_btn{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.dropdown_menu .toggle_btn{
+    display: block;
+}
+
+@media (max-width:992px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+    #img{
+        display: block;
+    }
+    
+}
+@media (max-width:576px) {
+    .dropdown_menu{
+        left:2rem;
+        width: unset;
+    }
+    #img{
+    
+        left:2rem;
+        width: unset;
+        
+    }
+
+    
+}
+footer{
+    background-color: #060954;
+}
+.footerContainer{
+    width:100%;
+    padding: 70px 30px 20px;
+
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2rem;
+    color:black;
+    opacity: 0.9;
+}
+.socialIcons a:hover {
+    background-color: #c7b213;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+   
+}
+.footerNav a:hover{
+    color: #c7b213;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;      
+}
+.footerBottom p{
+    color: #fff;
+}
+.designer{
+    opacity: 0.7;
+    text-decoration: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+</style>
+</head>
+<header>
+<body id="h1">
+<div class="navbar">
+    <div class="logo">Student Web</div>
+    <ul class="links">
+        <li><a href="#h1">HOME</a></li>
+        <li><a href="#a1">ABOUT</a></li>
+        <li><a href="#c1">CONTACT</a></li>
+        <li><a href="#w1">MYWORK</a></li>
+        <li><a href="#l1">FOLLOW US</a></li>
+
+    </ul>
+    <a href="#ac" class="action_btn"> Get Started</a>
+    <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+     </div>
+
+</div>
+<div class="dropdown_menu">
+    <ul>
+        <li><a href="#h1">HOME</a></li>
+        <li><a href="#a1">ABOUT</a></li>
+        <li><a href="#c1">CONTACT</a></li>
+        <li><a href="#w1">MYWORK</a></li>
+        <li><a href="#l1">FOLLOW US</a></li>
+        <li><a href="#ac" class="action_btn"> Get Started</a></li>
+    </ul>
+</div>
+    </header>
+        <section id="hero" >
+            <div class="sec">
+                <div class="text">
+            <h1 class="h1">
+                Welcome to the Student Web
+            </h1>
+            <p class="title"><b>"You don't have to be great to start,</b><p class="title1"><b>but you have to start to be great."</b>
+</div> 
+
+<img src="robo.jpg" alt="no image">
+
+
+</p>
+</p>
+</div>
+</section>
+
+    <h1 class="work"  id="w1">My Work</h1>
+    <div class="cont" id="ac">
+       <div class="imagebox">
+        <a href="portfolio.html">
+            <img src="port folio.jpg" alt=""> 
+        </a>
+       </div>
+       
+       <div class="imagebox">
+        <a href="cgpa_cal.html">
+        <img src="CGPA-Calculator.jpg" alt="">
+    </a>
+       </div>
+       
+       <div class="imagebox">
+        <a href="cgpa_per.html">
+        <img src="cgpa to percentage.jpg" alt="">
+       </a>
+       </div>
+       <div class="imagebox">
+        <a href="#">
+        <img src="files_storage.jpg" alt="">
+    </a>
+       </div>
+
+    </div>
+
+<section class="contact" id="c1">
+    <div class="content">
+        <h2><b>Contact Us</b></h2>
+    </div>
+    <div class="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text1">
+                      <h3>Address</h3>  
+                      <p>Shimoga Camp Road,<br>Karnataka, pin-577204,<br>India</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text1">
+                          <h3>Phone</h3>  
+                          <p>7204596975</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                            <div class="text1">
+                              <h3>Email</h3>  
+                              <p>nks990217@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactForm">
+                        <form name="submit-to-google-sheet">
+                            <h2>
+                                Send Message
+                            </h2>
+                            <div class="inputbox">
+                                <input type="text" name="Name" required="required">
+                                <span>Full Name</span>
+                            </div>
+                            <div class="inputbox">
+                                <input type="email" name="Email" required="required">
+                                <span>Email</span>
+                            </div>
+                            <div class="inputbox">
+                                <textarea name="Message" required="required"></textarea>
+                                <span>Type your Message...</span>
+                            </div>
+                             <div class="inputbox">
+                               <input type="submit" name="submit" required="required"> <a href="#c1">Send</a>
+                                
+                            </div>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </section>
+   
+    <script>
+        const toggleBtn=document.querySelector('.toggle_btn')
+        const toggleBtnIcon=document.querySelector('.toggle_btn i') 
+        const dropdownMenu=document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick=function(){
+            dropdownMenu.classList.toggle('open')
+            const isOpen=dropdownMenu.classList.contains("open")
+
+          toggleBtnIcon.classList=isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars'
+        }
+    </script>
+    <footer>
+        <div class="footerContainer" id="l1">
+            <div class="socialIcons">
+                <a href="https://www.linkedin.com/in/naveen-k-s-518063230/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.hackerrank.com/access-account/"><i class="fa-brands fa-hackerrank"></i></a>
+                <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.google.com/search?q=google+.com+login&rlz=1C1CHBF_enIN1019IN1019&oq=google+.com&gs_lcrp=EgZjaHJvbWUqDAgBEAAYFBiHAhiABDIGCAAQRRg5MgwIARAAGBQYhwIYgAQyDQgCEAAYgwEYsQMYgAQyBggDEEUYPDIGCAQQRRhBMgYIBRBFGEEyBggGEEUYPDIGCAcQRRg80gEIODQ5MGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"><i class="fa-brands fa-google-plus"></i></a>
+                
+            </div>
+            <div class="footerNav">
+                <ul>
+                <li><a href="#h1">HOME</a></li>
+                <li><a href="#a1">ABOUT</a></li>
+                <li><a href="#c1">CONTACT</a></li>
+                
+            </ul>
+            </div>
+        </div>
+    <div class="footerBottom">
+                <p>Copyright &copy;2024; Designed by <span class="designer">Naveen k s</span></p>
+
+    </div>
+    
+    </footer>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyLssa4OIY7UcuBWAfR2ZLOdP4d9EB5Tewl2BFq1_qS3PtMeQM7GfCeHwIPuLVvMmZf/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => 
+            {
+                msg.innerHTML="Message send successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
